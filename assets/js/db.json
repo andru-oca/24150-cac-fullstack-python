@@ -2,37 +2,37 @@
   {
     "title": "Asistencia",
     "img_path": "./assets/imgs/attendance.webp",
-    "link_uri": "https://forms.gle/hGikmEtz7nBLX5b48",
+    "link_uri": "https://docs.google.com/forms/d/e/1FAIpQLSe6cPJA40OhJ3qK4IvPC-nuzOXfnxGbGCBQSxvZlrE2XJ3OqQ/viewform",
     "texto": "Link de asistencia, detalles a tener en cuenta que la asistencia se activara cuando el instructor a cargo."
   },
   {
     "title": "Google Meet",
     "img_path": "./assets/imgs/meet.jpg",
-    "link_uri": "https://meet.google.com/ngs-mstk-dmu",
+    "link_uri": "https://meet.google.com/yvr-nqeo-gjh",
     "texto": "Link de meet para las clases sincronicas"
   },
   {
     "title": "Google Drive",
     "img_path":"./assets/imgs/gdrive.jpg",
-    "link_uri":"https://drive.google.com/drive/folders/17eGO0gH0TM6rnQT9cvbu-QhuZUD73ewN?usp=sharing",
+    "link_uri":"https://drive.google.com/drive/folders/14CDyxh_4Z_oo_mxCx4k-uq0DUvR6aGn6?usp=drive_link",
     "texto":"Link con lo trabajado en clase"
   },
   {
     "title": "YouTube Channel",
     "img_path":"./assets/imgs/youtube.jpg",
-    "link_uri":"https://www.youtube.com/playlist?list=PLqJAgZgcmtB8WU73jW_n44Gwcn7JomC-7",
+    "link_uri":"https://www.youtube.com/playlist?list=PLqJAgZgcmtB8jFvr8UkixGqCGMz9vFnbU",
     "texto":"Canal de youtube con las clases sincronicas"
   },
   {
     "title": "GitHub Repository",
     "img_path":"./assets/imgs/github.jpeg",
-    "link_uri":"https://github.com/andru-oca/comision-23509.git",
+    "link_uri":"https://github.com/andru-oca/2415-cac-fullstack-python.git",
     "texto":"Repositorio de Github, en ello se subira el codigo, implementando conocimientos de codigo en la nube"
   },
   {
     "title": "Formulario Consultas",
     "img_path":"./assets/imgs/consultas.jpg",
-    "link_uri":"https://forms.gle/uvntTtVPKHiR9XAz8",
+    "link_uri":"https://forms.gle/vthv5bcHbVPNGwsQ7",
     "texto":"Formulario de consultas con la tutor/a a cargo"
 
   },
@@ -42,12 +42,7 @@
     "link_uri":"https://agenciadeaprendizaje.bue.edu.ar/",
     "texto":"URL de la agencia"
   },
-  {
-    "title":"Plan de Estudio",
-    "img_path":"./assets/imgs/plan-estudio.jpeg",
-    "link_uri":"https://drive.google.com/file/d/1X41mYqahAAXPgsl79wifmdTbkfowg1fw/view",
-    "texto":"Plan de estudios para la comision de full stack python"
-  },
+
   {
     "title":"Aula Virtual",
     "img_path":"./assets/imgs/aulavirtual.png",
@@ -72,30 +67,12 @@
     "link_uri":"https://www.python.org/downloads/",
     "texto":"Lenguaje de programacion a usar en la comision"
   },
-  {
-    "title":"Grupos TPO",
-    "img_path":"./assets/imgs/team.jpg",
-    "link_uri":"https://docs.google.com/spreadsheets/d/17UYMJpPpuPYmxK7-HnC3C0cfSXv81HssqoB8xCsJgnc/edit?usp=sharing",
-    "texto":"Armado de grupos para los trabajos practicos obligatorios"
-  },
+
   {
     "title":"Fundamentos de Programación",
     "img_path":"./assets/imgs/extra-data.jpg",
     "link_uri":"https://drive.google.com/file/d/1icy4XsAXonBCqm4OoY_lfPtDEp2VwxhQ/view?usp=sharing",
     "texto":"Ayuda de repaso de logica de programación. Es de ayuda creado por uno de nuestros instructores"
   }
-  ,
-  {
-    "title":"Consignas TPO FrontEnd",
-    "img_path":"./assets/imgs/front-end-tpo.jpg",
-    "link_uri":"https://drive.google.com/file/d/1sBzzwbHJWidUQ5IyawXz_YDkR7B0HMyy/view",
-    "texto":"Consignas del TPO FRONT END"
-  }
-  ,
-  {
-    "title":"Formulario TP",
-    "img_path":"./assets/imgs/front-end-tpo.jpg",
-    "link_uri":"https://forms.gle/o4wt2v8fRox4F5Rv9",
-    "texto":"Formulario del tpo con los datos del proyecto y equipo"
-  }
+
 ]
