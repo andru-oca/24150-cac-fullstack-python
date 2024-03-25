@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Slabo+27px&display=swap');
+
+@import "./header.freddy/header.css";
+@import "./main.kevin/main.css";
+@import "./footer.sebas/footer.css";
+
+:root{
+    font-size: 32px;
+
+    --color-base-black: #6666661f;  /* background */
+    --color-base-black-sec: #121212;
+    --color-base-gray: #535353;
+    --color-base-gray-sec: #b3b3b3 ; /*texto*/
+    --color-base-green: #1db954;
+
+    --border-general :1px solid var(--color-base-green) ;
+
+    --font-family:"Lato", serif;
+}
+
+
+

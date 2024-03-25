@@ -1,0 +1,16 @@
+footer{
+    background-color: var(--color-base-black);
+    color: var(--color-base-gray-sec);
+    border:2px dotted var(--color-base-black);
+
+    padding: 30px;
+}
+
+footer  iframe {
+    border-radius: 10px;
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+}
+
+/* ......continuara */

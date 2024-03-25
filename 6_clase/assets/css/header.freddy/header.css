@@ -1,0 +1,28 @@
+header{
+    border: var(--border-general);
+    color: var(--color-base-gray-sec);
+    background-color: var(--color-base-black);
+    text-align: center;
+
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+
+header h1 {
+    color: var(--color-base-black-sec) ;
+    font-weight: 100;
+}
+
+header nav li{
+    list-style: none;
+}   
+
+
+header .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 100,
+  'GRAD' 0,
+  'opsz' 24
+}
