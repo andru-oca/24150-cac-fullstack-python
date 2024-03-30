@@ -73,6 +73,11 @@
     "img_path":"./assets/imgs/extra-data.jpg",
     "link_uri":"https://drive.google.com/file/d/1icy4XsAXonBCqm4OoY_lfPtDEp2VwxhQ/view?usp=sharing",
     "texto":"Ayuda de repaso de logica de programación. Es de ayuda creado por uno de nuestros instructores"
+  },
+  {
+    "title": "TP-FrontEnd",
+    "img_path": "https://i0.wp.com/tolustar.com/wp-content/uploads/2020/02/html-css.jpg" ,
+    "link_uri": "./assets/datastore/practico_integrador_cac _fullstack.pdf",
+    "texto": "Consignas sobre trabajo practico"
   }
-
 ]
