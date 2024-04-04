@@ -1,0 +1,14 @@
+main{
+    background-color: var(--color-base-black);
+    color:var(--color-base-gray-sec);
+}
+
+
+main .imagen-nona{
+    width: 100vw;
+}
+
+main p {
+    font-family: var(--font-family);
+    font-size: 40%;
+}

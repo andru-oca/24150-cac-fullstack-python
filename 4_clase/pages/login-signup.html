@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/multimedia/img/__favicon_website.svg" type="image/x-icon">
+    <title>Ecommerce &  La nonna</title>
+</head>
+<body>
+    
+<header>
+    <h1>el ecommerce de la nonna</h1>
+    <nav>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Ubicacion</a></li>
+          <li><a href="./pages/login-signup.html">Registrarte</a></li>
+        </ul>
+    </nav>
+
+</header>
+<main>
+
+<hr>
+
+<fieldset>
+    <legend> 
+        <marquee behavior="" direction=""> Sign Up</marquee>
+    </legend>
+
+    <form action="" method="post">
+        <div>
+            <label for="user"> User </label>
+            <br>
+            <input type="text" name="user" id="user" placeholder="Pepe@123">
+        </div>
+
+        <div>
+            <label for="email"> Email </label>
+            <br>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Seleccion el genero:</legend>
+              
+                <div>
+                  <input type="radio" id="masc" name="genero" value="masc" checked />
+                  <label for="masc">Masculino</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="fem" name="genero" value="fem" />
+                  <label for="fem">Femenino</label>
+                </div>
+              
+                <div>
+                  <input type="radio" id="no_binary" name="genero" value="no_binary" />
+                  <label for="no_binary">No Binario</label>
+                </div>
+                
+            </fieldset>
+            <div>
+
+                <label for="appt">Fecha de suscripcion:</label>
+
+                <input type="datetime-local" id="appt" name="appt"  
+                value="2024-06-12T19:30"
+                min="2024-06-07T00:00"
+                max="2024-06-14T00:00"  required />
+                
+                <small>Defecto la fecha es la actual</small>
+            </div>
+
+
+            <div>
+
+                <div>
+                <input type="color" id="head" name="head" value="#e66465" />
+                <label for="head">Elija color de comida</label>
+                </div>
+
+                <div>
+                <input type="color" id="body" name="bebida" value="#f6b73c" />
+                <label for="bebida">Color de marca de bebida</label>
+                </div>
+            </div>
+
+
+            <fieldset>
+                <legend>Decime tus intereses</legend>
+                <div>
+                  <input type="checkbox" id="coding" name="interest" value="coding" checked />
+                  <label for="coding">Codificar</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="music" name="interest" value="music" />
+                  <label for="music">Escuchar musica</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="comer" name="interest" value="comer" />
+                    <label for="comer">Me gusta comer</label>
+                </div>
+
+
+            </fieldset>
+              
+            <hr>
+
+            <div>
+                <label for="password"> Ingrese el Password </label>
+                <br>
+                <input type="password" name="password_1" id="password" placeholder="ingrese su pwd">
+            </div>
+            <div>
+                <label for="password"> Validar el Password </label>
+                <br>
+                <input type="password" name="password_2" id="password">
+            </div>
+            <hr>
+
+            <div>
+                <input type="checkbox" id="comer" name="accept" value="comer" checked/>
+                <label for="comer">Acepta los terminos y condiciones??? </label>
+            </div>
+
+
+            <button type="submit"> Registrarte </button>
+            <button type="reset"> Clean up </button>
+        </div>
+
+
+
+    </form>
+
+</fieldset>
+
+
+<fieldset>
+    <legend> Log In</legend>
+    <form action="" method="get">
+        <div>
+            <label for="email"> Email </label>
+            <br>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="password"> Password </label>
+            <br>
+            <input type="password" name="password" id="password" placeholder="ingrese su pwd">
+        </div>
+        <hr>
+        <button type="submit"> Login my User</button>
+    </form>
+</fieldset>
+
+</main>
+<footer>
+    <hr>
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/S-xhiVjQLOE?si=vwRfxc-arbLXEWrx&amp;start=600" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26275.38956243067!2d-58.54010996108192!3d-34.5934461319261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb707542c673b%3A0x60bcf9ab69a2b2b4!2sMi%20Gusto!5e0!3m2!1sen!2sar!4v1710197314672!5m2!1sen!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</footer>
+</body>
+</html>
