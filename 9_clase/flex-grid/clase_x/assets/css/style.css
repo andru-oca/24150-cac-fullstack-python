@@ -1,0 +1,155 @@
+:root{
+    --bg-div-color: #700B97;
+    --bg-div-color-sec : #8e05c2;
+    --bg-div-color-opp: orange;
+}
+
+body{
+    margin: 0;
+    background-color: #666;
+    height: 300svh;
+    border: 1px solid white;
+}
+
+
+
+.container_grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas:
+    ". h h"
+    "main main ."
+    "footer footer footer"
+    ;
+
+    gap: 2rem;
+
+}
+
+
+
+header{
+    grid-area: h;
+    border: 1px solid white;
+    background-color: red;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+
+main{grid-area: main;
+    border: 1px solid orange;}
+
+footer{grid-area: footer;
+
+}
+
+
+.container_flex{  
+    /* o lo mismo que lo llamara con body */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+    gap: 3rem;
+
+    padding: 4rem;
+}
+
+main > div {
+    height: 100px;
+    aspect-ratio: 1;
+    border-radius: 30px;
+    border: 1px solid whitesmoke;
+    flex-grow: 2;
+    transition: all 700ms ease-in-out;
+
+    background-image: url("https://wallpaperset.com/w/full/e/d/3/41377.jpg");
+    background-position: center;
+    background-size: contain;
+}
+
+
+
+main > div:nth-child(odd){
+    background-color: var(--bg-div-color);
+}
+
+main > div:nth-child(odd):hover{
+    border-radius: 0;
+    background-color: var(--bg-div-color-opp);
+    flex-grow: 10;
+}
+
+
+main > div:nth-child(even){
+    background-color: var(--bg-div-color-sec);
+}
+
+
+
+
+
+
+footer {
+
+    padding: 5rem;
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr) ;
+    grid-template-rows: repeat(3,1fr) ;
+
+    gap: 1rem;
+
+
+    grid-template-areas: 
+    "uno dos tres"
+    "uno cuatro cinco"
+    "six six cinco"
+    ;
+
+}
+
+footer > div {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 10px;
+
+    &:hover{
+        background-size: contain;
+
+    }
+
+}
+
+
+
+footer > div:nth-child(1){
+    grid-area: uno;
+    background-image: url("https://img.freepik.com/fotos-premium/hombre-frente-pizza-gigante-mesa_349893-1814.jpg");
+}
+footer > div:nth-child(2){
+    grid-area: dos;
+    background-image: url("https://www.okchicas.com/wp-content/uploads/2021/06/Personas-publican-fotos-de-perritos-con-pelucas-y-el-resultado-alegra-a-internet-10.jpg");
+}
+footer > div:nth-child(3){ 
+    grid-area: tres;
+    background-image: url("https://www.fanaticosdelasmascotas.cl/wp-content/uploads/2023/08/portada-blog_mascotas-1.jpg")}
+footer > div:nth-child(4){
+    grid-area: cuatro;
+    background-image: url("https://i.redd.it/8hf4qyd2fxgb1.jpg");
+}
+footer > div:nth-child(5){
+    grid-area: cinco;
+    background-image: url("https://imagenes.elpais.com/resizer/Vbn49Luevj2xZH70e_j8paCFups=/980x980/cloudfront-eu-central-1.images.arcpublishing.com/prisa/3XLTWDI6QNOQBDZEOX4ZQQ67VI.jpg");}
+footer > div:nth-child(6){
+    grid-area: six;
+    background-image: url("https://i.chirkup.me/00/00/65/6523_728x.jpg");}
