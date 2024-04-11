@@ -75,6 +75,12 @@
     "texto":"Ayuda de repaso de logica de programación. Es de ayuda creado por uno de nuestros instructores"
   },
   {
+    "title": "Grupos Trabajo Front End",
+    "img_path": "./assets/imgs/team.jpg",
+    "link_uri": "https://docs.google.com/spreadsheets/d/1Cn5KFjAOeotr0eMr_jaTiWwyRfxSzpTjrVed3wHd00c/edit?usp=sharing",
+    "texto": "Google Sheet para poder observar los grupos para el Tp Front End Codo a Codo"
+  },
+  {
     "title": "TP-FrontEnd",
     "img_path": "https://i0.wp.com/tolustar.com/wp-content/uploads/2020/02/html-css.jpg" ,
     "link_uri": "./assets/datastore/practico_integrador_cac _fullstack.pdf",
