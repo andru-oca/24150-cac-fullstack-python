@@ -1,0 +1,52 @@
+[
+  {
+    "nombre": "Lettuce - Escarole",
+    "descripcion": "Training",
+    "precio": 16748.56
+  },
+  {
+    "nombre": "Tomatoes - Cherry",
+    "descripcion": "Sales",
+    "precio": 17843.22
+  },
+  {
+    "nombre": "Tuna - Bluefin",
+    "descripcion": "Marketing",
+    "precio": 19307.9
+  },
+  {
+    "nombre": "Breakfast Quesadillas",
+    "descripcion": "Human Resources",
+    "precio": 13183.83
+  },
+  {
+    "nombre": "Ice Cream Bar - Oreo Sandwich",
+    "descripcion": "Human Resources",
+    "precio": 11948.44
+  },
+  {
+    "nombre": "Mcgillicuddy Vanilla Schnap",
+    "descripcion": "Sales",
+    "precio": 17161.76
+  },
+  {
+    "nombre": "Rice Wine - Aji Mirin",
+    "descripcion": "Accounting",
+    "precio": 10621.12
+  },
+  {
+    "nombre": "Pork - Side Ribs",
+    "descripcion": "Engineering",
+    "precio": 15945.72
+  },
+  {
+    "nombre": "Wine - White, Chardonnay",
+    "descripcion": "Product Management",
+    "precio": 16596.03
+  },
+  {
+    "nombre": "Tart Shells - Savory, 2",
+    "descripcion": "Product Management",
+    "precio": 12146.53
+  }
+]
