@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap');
+
+.color{
+    font-family: "Teachers", sans-serif;
+    color:#666;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.color:hover{
+    scale: 1.2;
+}
