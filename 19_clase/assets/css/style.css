@@ -10,3 +10,9 @@
 .color:hover{
     scale: 1.2;
 }
+
+
+.closer{
+    border: 1px solid purple;
+    border-radius: 10px;
+}
