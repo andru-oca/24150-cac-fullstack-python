@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+
+  mysql_db_container:
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: codo_codo
+    ports:
+      - 3306:3306
+
+  adminer_container:
+    image: adminer:latest
+    environment:
+      ADMINER_DEFAULT_SERVER: mysql_db_container
+    ports:
+      - 8080:8080
