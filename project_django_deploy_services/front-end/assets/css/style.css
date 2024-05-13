@@ -1,0 +1,273 @@
+:root {
+  --font-color: #c7d0da;
+}
+
+body {
+  display: grid;
+  margin: 0;
+  height: 100svh;
+  grid-template-areas:
+    "header header header"
+    "main main main"
+    "main main main"
+    "footer footer footer";
+  grid-template-rows: repeat(4, 1fr);
+  background-image: url("../media/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  scroll-behavior: smooth;
+}
+
+header,
+main,
+footer {
+  box-sizing: border-box;
+}
+
+header {
+  grid-area: header;
+}
+main {
+  grid-area: main;
+}
+footer {
+  grid-area: footer;
+}
+
+/* header styles */
+
+header {
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--font-color);
+  font-weight: bold;
+  font-size: 1.5rem;
+  transition: all 250ms ease-in-out;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+/* main styles */
+
+main {
+  display: flex;
+  padding: 2rem;
+
+  flex-wrap: wrap;
+
+  gap: 10%;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  height: 100%;
+}
+
+main h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #000;
+}
+
+main,
+footer {
+  background-color: transparent;
+  padding: 20px;
+  color: var(--font-color);
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  text-align: end;
+  padding-right: 20%;
+}
+
+.container {
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(180%) blur(10px);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: all 1s ease-in-out;
+}
+
+.sizeText {
+  font-size: 2rem;
+  color: #c7d0da;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #5d3325;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(180%) blur(10px);
+}
+
+.btn:hover {
+  background-color: #5d3110;
+}
+
+.btn:active {
+  background-color: #5d3020;
+}
+
+#container {
+  width: 90svw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.close-tag {
+  border-radius: 50%;
+  width: 30px;
+  aspect-ratio: 1;
+  text-align: center;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  color: #000;
+  background-color: transparent;
+  transition: transform 0.3s ease;
+
+  &:hover {
+    cursor: pointer;
+    animation: spin 1s linear infinite;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.item {
+  position: relative;
+  border-radius: 1rem;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3/2;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: saturate(180%) blur(10px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+
+  h3 {
+    font-size: small;
+    font-weight: 900;
+  }
+
+  p {
+    font-size: smaller;
+    font-weight: 100;
+    padding: 5px;
+  }
+
+  img {
+    object-fit: fill;
+    width: 100%;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+}
+
+.wrapper {
+  display: flex;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container-form {
+  border-radius: 1rem;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+  max-width: 100%;
+  backdrop-filter: saturate(180%) blur(10px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-top: 20px;
+}
+
+label {
+  font-weight: bold;
+  color: #c7d0da;
+}
+
+input[type="text"],
+input[type="url"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #999;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+input[type="submit"]:hover {
+  background: transparent;
+  backdrop-filter: saturate(180%) blur(10px);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
