@@ -10,11 +10,11 @@ services:
       MYSQL_ROOT_PASSWORD: coderhouse
     ports:
       - 3306:3306
-    volumes:
-      - ./sql_database_answers:/sql_database_answers
+    # volumes:
+      # - ./sql_database_answers:/sql_database_answers
   adminer:
     image: adminer
-    container_name: mysql-client
+    container_name: mysql_client
     restart: always
     ports:
       - 8080:8080
