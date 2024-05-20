@@ -13,13 +13,11 @@ start:
 	@echo "Waiting for MySQL to be ready..."
 	bash wait.sh
 
-
-
 run:
 
 	@echo "Create the import and run de script"
 	docker exec -it $(INSTANCE) mysql -u root -p$(PASSWORD) -e "source $(DATABASE_CREATION);"
-	docker exec -it $(INSTANCE) mysql -u root -p$(PASSWORD) --local-infile=1 -e "source $(DATABASE_POPULATION)"
+	docker exec -it $(INSTANCE) mysql -u root -p$(PASSWORD) -e "source $(DATABASE_POPULATION)"
 
 
 access:
