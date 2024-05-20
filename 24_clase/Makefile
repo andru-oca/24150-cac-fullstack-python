@@ -1,7 +1,7 @@
 DATABASE_CREATION=/sql_database_answers/database.sql
 DATABASE_POPULATION=/sql_database_answers/inser_data.sql
 PASSWORD=coderhouse
-INSTANCE=mysql-server
+INSTANCE=mysql
 
 .PHONY: all start run access dwon
 
@@ -11,7 +11,7 @@ start:
 	@echo "Start process with creation of the server"
 	docker compose -f docker-compose.yml up -d --build
 	@echo "Waiting for MySQL to be ready..."
-	bash wait_docker.sh
+	bash wait.sh
 
 
 
@@ -31,4 +31,3 @@ down:
 
 	@echo "Shutting Down service"
 	docker compose -f docker-compose.yml down
-	
