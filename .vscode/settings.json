@@ -1,0 +1,4 @@
+{
+    "Prettier-SQL.SQLFlavourOverride": "mysql",
+    "Prettier-SQL.keywordCase": "upper"
+}
