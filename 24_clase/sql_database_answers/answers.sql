@@ -8,7 +8,7 @@ SELECT
     producto_nombre AS 'Nombre del Producto',
     precio_unitario AS 'Precio Unitario'
 FROM
-    Productos;
+    productos;
 
 
 /*
@@ -138,34 +138,31 @@ WHERE
 DROP PROCEDURE IF EXISTS Actualiza_Precio;
 
 DELIMITER $$
-CREATE PROCEDURE Actualiza_Precio (IN aumento INT) BEGIN
-/*	para este caso, estoy haciendo un cambio en masivo,
-por lo tanto permito cambiar el safe mode a false.
-Sin embargo como buena practica es recomendado hacer
-por item. 
- */
-SELECT
-    *
-FROM
-    productos;
 
-SET
-    sql_safe_updates = 0;
+CREATE PROCEDURE Actualiza_Precio (IN aumento INT) 
+BEGIN
+    /* para este caso, estoy haciendo un cambio en masivo,
+    por lo tanto permito cambiar el safe mode a false.
+    Sin embargo como buena practica es recomendado hacer
+    por item. 
+    */
+    
+    -- Desactivar el modo seguro
+    SET sql_safe_updates = 0;
 
-UPDATE productos
-SET
-    precio_unitario = precio_unitario * (1 + aumento / 100);
+    -- Actualizar los precios de los productos
+    UPDATE productos
+    SET precio_unitario = precio_unitario * (1 + aumento / 100.0);
 
--- volvemos a setear el valor inicial
-SET
-    sql_safe_updates = 1;
+    -- Volver a activar el modo seguro
+    SET sql_safe_updates = 1;
 
-SELECT
-    *
-FROM
-    productos;
+    -- Seleccionar todos los productos para ver los cambios
+    SELECT * FROM productos;
 
-END $$ DELIMITER;
+END$$
+
+DELIMITER ;
 
 -- Detalle a tener en cuenta, si el precio_unitario tiene un constraint (dado a que puede ser un KEY)
 -- en la dd.bb el procedure no se ejecutará, dependerá de si esa constraint tiene la posibilidad de
@@ -175,13 +172,14 @@ END $$ DELIMITER;
 SET
     @aumento = 10;
 
-CALL Actualiza_Precio (@aumento);
+CALL Actualiza_Precio(@aumento);
 
 /*
 10) Crear un Stored Procedure 'Actualiza_Descuento’' 
 para que reciba por parámetro un valor de descuento a realizar y lo sume al ya existente,
 sólo a los pedidos de los clientes de Alaska, Costa Dorada y California.
  */
+
 DROP PROCEDURE IF EXISTS Actualiza_Descuento;
 
 DELIMITER $$
@@ -231,7 +229,8 @@ SET
 
 DROP TEMPORARY TABLE IF EXISTS temp_data;
 
-END $$ DELIMITER;
+END$$
+DELIMITER ;
 
 CALL Actualiza_Descuento (5);
 
@@ -269,7 +268,8 @@ SELECT
 
 END IF;
 
-END $$ DELIMITER;
+END$$
+DELIMITER ;
 
 SET
     @categoria = 'categoria1';
@@ -467,10 +467,10 @@ GROUP BY
 20) Crear una tabla llamada Clientes_Inactivos 
 Campos: Cliente_Id nchar(5) not null, Cliente_Nombre varchar(20) null
  */
-DROP TABLE IF EXISTS Clientes_Inactivos;
+DROP TABLE IF EXISTS clientes_inactivos;
 
 CREATE TABLE IF NOT EXISTS
-    Clientes_Inactivos (
+    clientes_inactivos (
         cliente_id VARCHAR(5) NOT NULL,
         cliente_nombre VARCHAR(20)
     );
@@ -483,7 +483,7 @@ DROP PROCEDURE IF EXISTS sp_Clientes_Inactivos;
 DELIMITER $$
 CREATE PROCEDURE sp_Clientes_Inactivos () MODIFIES SQL DATA BEGIN
 INSERT INTO
-    Clientes_inactivos
+    clientes_inactivos
 SELECT
     CAST(cliente_id AS CHAR(5)),
     CAST(cliente_nombre AS CHAR(50))
@@ -499,6 +499,7 @@ WHERE
             cliente_id = clientes.cliente_id
     );
 
-END $$ DELIMITER;
+END$$
+DELIMITER ;
 
 CALL sp_Clientes_Inactivos ();

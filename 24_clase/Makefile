@@ -1,7 +1,7 @@
 DATABASE_CREATION=/sql_database_answers/database.sql
-DATABASE_POPULATION=/sql_database_answers/inser_data.sql
+DATABASE_POPULATION=/sql_database_answers/insert_data.sql
 PASSWORD=coderhouse
-INSTANCE=mysql
+INSTANCE=mysql_server
 
 .PHONY: all start run access dwon
 
@@ -11,10 +11,9 @@ start:
 	@echo "Start process with creation of the server"
 	docker compose -f docker-compose.yml up -d --build
 	@echo "Waiting for MySQL to be ready..."
-	bash wait.sh
 
 run:
-
+	bash wait.sh
 	@echo "Create the import and run de script"
 	docker exec -it $(INSTANCE) mysql -u root -p$(PASSWORD) -e "source $(DATABASE_CREATION);"
 	docker exec -it $(INSTANCE) mysql -u root -p$(PASSWORD) -e "source $(DATABASE_POPULATION)"
@@ -22,8 +21,8 @@ run:
 
 access:
 
-	@echo "Access to db-client in $¨(SERVICE_NAME)"
-	docker exec -it $(SERVICE_NAME) mysql -u root -p$(PASSWORD) 
+	@echo "Access to db-client in $(INSTANCE)"
+	docker exec -it $(INSTANCE) mysql -u root -p$(PASSWORD) 
 
 down:
 
