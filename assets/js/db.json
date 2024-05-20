@@ -85,5 +85,11 @@
     "img_path": "https://i0.wp.com/tolustar.com/wp-content/uploads/2020/02/html-css.jpg" ,
     "link_uri": "./assets/datastore/practico_integrador_cac _fullstack.pdf",
     "texto": "Consignas sobre trabajo practico"
+  },
+  {
+    "title": "Formulario para el Primer TP::Front End",
+    "img_path": "./assets/imgs/tp-primer-front-end.png" ,
+    "link_uri": "https://forms.gle/vKgrruHbRq3jUP127",
+    "texto": "Formulario para la presentacion del Trabajo práctico"
   }
 ]
