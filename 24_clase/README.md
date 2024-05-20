@@ -133,4 +133,6 @@ _mostrar: Nombre de Empleado, Nombre de Producto, Monto_
 
 ## Levantar el proyecto 
 
-
+- `make` : Levantar toda la base  de datos con la insercion de los datos
+- `make access`: Acceso de la base de datos por medio de la terminal
+- `make down`: Dar de baja el servicio 
