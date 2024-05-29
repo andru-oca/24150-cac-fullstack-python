@@ -1,0 +1,72 @@
+[
+    {
+        "nombre_ciudad": "Tulum",
+        "precio": "usd2000",
+        "oferta": "2x1",
+        "descuento": "usd1700",
+        "pasajes": "quedan 2!"
+    },
+    {
+        "nombre_ciudad": "París",
+        "precio": "usd2000",
+        "oferta": "2x1",
+        "descuento": "usd1700",
+        "pasajes": "queda 1!"
+    },
+    {
+        "nombre_ciudad": "Orlando",
+        "precio": "usd1700",
+        "oferta": "2x1",
+        "descuento": "usd1400",
+        "pasajes": "sold out"
+    },
+    {
+        "nombre_ciudad": "Río de Janeiro",
+        "precio": "usd200",
+        "oferta": "2x1",
+        "descuento": "usd100",
+        "pasajes": "quedan 34"
+    },
+    {
+        "nombre_ciudad": "Barcelona",
+        "precio": "usd2000",
+        "oferta": "2x1",
+        "descuento": "usd1700",
+        "pasajes": "quedan 20"
+    },
+    {
+        "nombre_ciudad": "Venecia",
+        "precio": "usd2500",
+        "oferta": "2x1",
+        "descuento": "usd2000",
+        "pasajes": "quedan 18"
+    },
+    {
+        "nombre_ciudad": "Cuzco",
+        "precio": "usd500",
+        "oferta": "2x1",
+        "descuento": "usd300",
+        "pasajes": "quedan 5!"
+    },
+    {
+        "nombre_ciudad": "Lima",
+        "precio": "usd500",
+        "oferta": "2x1",
+        "descuento": "usd300",
+        "pasajes": "quedan 2!"
+    },
+    {
+        "nombre_ciudad": "Estambul",
+        "precio": "usd2000",
+        "oferta": "2x1",
+        "descuento": "usd1700",
+        "pasajes": "queda 1!"
+    },
+    {
+        "nombre_ciudad": "Lisboa",
+        "precio": "usd2000",
+        "oferta": "2x1",
+        "descuento": "usd1700",
+        "pasajes": "sold out"
+    }
+]
