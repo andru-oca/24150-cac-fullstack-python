@@ -91,5 +91,11 @@
     "img_path": "./assets/imgs/tp-primer-front-end.png" ,
     "link_uri": "https://forms.gle/vKgrruHbRq3jUP127",
     "texto": "Formulario para la presentacion del Trabajo práctico"
+  },
+  {
+    "tittle":"Trabajo Practico Backend",
+    "img_path":"https://i0.wp.com/tolustar.com/wp-content/uploads/2020/02/html-css.jpg",
+    "link_uri":"https://docs.google.com/presentation/d/e/2PACX-1vSTghMQhjSwNloC7AVCNJ_Ua-n6TIdtbgG4ggxC0UYjDGqH3DFefVxzje3MgX9olw/pub?start=false&loop=false&delayms=3000",
+    "texto":"Trabajo Practico Final Backend"
   }
 ]
