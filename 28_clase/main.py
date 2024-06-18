@@ -15,7 +15,7 @@ def main():
     crud.controller_save_user(mariela)
     print(crud.db)
 
-    crud.controller_delete_user("Romulo")
+    crud.controller_delete_user("romulo")
     print(crud.db)
 
 
