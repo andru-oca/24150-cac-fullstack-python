@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+
+  web:
+    image: httpd:latest
+    container_name: website
+    ports:
+      - "8081:80"
+    volumes:
+      - ./frontend:/usr/local/apache2/htdocs/
+
+  mysql_db_container:
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: codo_codo
+      MYSQL_DATABASE: pelicula_db
+    ports:
+      - 3306:3306
+
+  adminer_container:
+    image: adminer:latest
+    environment:
+      ADMINER_DEFAULT_SERVER: mysql_db_container
+    ports:
+      - 8080:8080
