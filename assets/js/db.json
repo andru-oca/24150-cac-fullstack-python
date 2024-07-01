@@ -93,9 +93,17 @@
     "texto": "Formulario para la presentacion del Trabajo práctico"
   },
   {
-    "tittle":"Trabajo Practico Backend",
+    "title":"Consignas del: Trabajo Practico Backend",
     "img_path":"https://i0.wp.com/tolustar.com/wp-content/uploads/2020/02/html-css.jpg",
     "link_uri":"https://docs.google.com/presentation/d/e/2PACX-1vSTghMQhjSwNloC7AVCNJ_Ua-n6TIdtbgG4ggxC0UYjDGqH3DFefVxzje3MgX9olw/pub?start=false&loop=false&delayms=3000",
     "texto":"Trabajo Practico Final Backend"
   }
+  ,
+  {
+    "title":"Formulario de entrega: Trabajo Practico Backend",
+    "img_path":"https://i0.wp.com/tolustar.com/wp-content/uploads/2020/02/html-css.jpg",
+    "link_uri":"https://forms.gle/bY8bVeU949T4JpCV9",
+    "texto":"Formulario para la entrega del proyecto final en backend"
+  }
+
 ]
