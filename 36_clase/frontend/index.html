@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Peliculas</title>
+</head>
+<body>
+    <h1>Las peliculas</h1>
+    <hr>
+    <section id="crear_pelicula">
+        <form id="crear_pelicula_form">
+            <label> Ingresar el nombre de la peli: </label>
+            <input type="text" name="nombre">
+            <br>
+            <label> Ingresar la duracion de la peli: </label>
+            <input type="number" name="duracion">
+            <br>
+            <label> Ingresar el genero de la peli: </label>
+            <input type="text" name="genero">
+            <br>
+            <label> Ingresar fecha de estreno: </label>
+            <input type="date" name="fecha_release">
+            <br>
+            <button id="btn-post" type="submit"> Crear pelicula</button>
+        </form>
+    </section>
+    <hr>
+    <section id="mostrar_peliculas">
+        <button id="btn-get">Obtener Peliculas</button>
+        <div id="peliculas">
+
+
+        </div>
+    </section>
+</body>
+<script src="./static/js/index.js"></script>
+</html>

@@ -1,1 +1,1 @@
-This is information about clase36/
+This is information about clase35/
